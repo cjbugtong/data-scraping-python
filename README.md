@@ -1,54 +1,22 @@
 # Data Scraping Python
 
-## About This Project
+## Overview
 
-In this project, I used Python to scrape data about the largest companies in the Philippines from Wikipedia.
+This project uses Python to scrape and process data on the largest companies in the Philippines from Wikipedia.
 
-The project focuses on collecting company data from an HTML table, cleaning and organizing the information, and exporting the final dataset into CSV format using Pandas.
+The workflow includes extracting HTML table data, cleaning and organizing the dataset with Pandas, and exporting the final dataset into CSV format for analysis and reporting.
 
-The project was built and tested inside Jupyter Notebook.
-
----
-
-## What I Did
-
-### Web Scraping
-
-I used Python libraries such as BeautifulSoup and Requests to extract company information directly from Wikipedia.
-
-The scraping process includes:
-
-* Sending requests to the website
-* Reading the HTML content
-* Locating the target table
-* Extracting table headers and rows
-* Converting the extracted data into a structured format
+Built and tested using Jupyter Notebook.
 
 ---
 
-### Data Cleaning and Processing
+## Features
 
-After scraping the data, I cleaned and organized it using Pandas.
-
-This includes:
-
-* Formatting table data properly
-* Removing unnecessary spaces or values
-* Organizing the dataset into rows and columns
-* Converting the data into a Pandas DataFrame
-
----
-
-### Exporting the Dataset
-
-After processing the data, I exported the final dataset into a CSV file for future analysis and reporting.
-
----
-
-## Files in This Project
-
-* `TopCompaniesInPH_WebScraping.ipynb` – Main Jupyter Notebook file containing the web scraping process
-* `Top_Company_PH.csv` – Exported CSV dataset
+* Extracts company data directly from Wikipedia
+* Parses HTML tables using BeautifulSoup
+* Cleans and structures data using Pandas
+* Exports processed data into CSV format
+* Runs entirely in Jupyter Notebook
 
 ---
 
@@ -62,82 +30,100 @@ After processing the data, I exported the final dataset into a CSV file for futu
 
 ---
 
-## Website Source
+## Data Source
 
-Data scraped from Wikipedia:
+Wikipedia – List of Largest Companies in the Philippines
+
+https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_Philippines
+
+---
+
+## Project Structure
 
 ```text
-https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_Philippines
+data-scraping-python/
+│
+├── data/
+│   └── Top_Company_PH.csv
+│
+├── notebook/
+│   └── TopCompaniesInPH_WebScraping.ipynb
+│
+└── README.md
 ```
 
 ---
 
-## What I Learned
+## Installation
 
-* How web scraping works using Python
-* How to extract HTML table data using BeautifulSoup
-* How to clean and organize data using Pandas
-* How to export datasets into CSV format
-* How to work with Jupyter Notebook for data projects
-
----
-
-## How to Run
-
-1. Install the required libraries
+Install the required libraries:
 
 ```bash
 pip install beautifulsoup4 requests pandas notebook
 ```
 
-2. Clone the repository
+---
+
+## How to Run
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/cjbugtong/data-scraping-python.git
 ```
 
-3. Open the project folder
+### 2. Open the Project Folder
 
 ```bash
 cd data-scraping-python
 ```
 
-4. Start Jupyter Notebook
+### 3. Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-5. Open the notebook file
+### 4. Open the Notebook File
 
 ```bash
-TopCompaniesInPH_WebScraping.ipynb
+notebook/TopCompaniesInPH_WebScraping.ipynb
 ```
 
-6. Run the notebook cells step by step
+### 5. Run the Notebook Cells
+
+Execute the notebook step by step to scrape, process, and export the dataset.
 
 ---
 
 ## Output
 
-The project exports the scraped data into:
+Processed dataset exported as:
 
-```bash
-Top_Company_PH.csv
+```text
+data/Top_Company_PH.csv
 ```
 
 ---
 
-## Sample Data Collected
+## Skills Demonstrated
 
-* Company Name
-* Industry
-* Revenue
-* Headquarters
-* Rank
+* Web Scraping
+* Data Extraction
+* Data Cleaning
+* Data Processing
+* CSV Exporting
+* Working with HTML Tables
+* Python Data Analysis Workflow
+
+---
+
+## Author
+
+Christian Joy D. Bugtong
 
 ---
 
 ## Notes
 
-This project is part of my practice in improving my Python, web scraping, and data processing skills.
+This project was developed to strengthen practical skills in Python web scraping and data processing using real-world datasets.
